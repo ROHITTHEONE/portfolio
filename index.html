@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/sal.js/dist/sal.css">
+</head>
+<body>
+	<header>
+		<p class="header-name">Rohit<span>Kashyap</span></p>
+		<div class="header-wrapper" onclick="_show();">
+		 	<div class="outer-ham">
+		 		<div class="header-hamburger" id="ham"></div>
+		 	</div>
+		 	<nav id="nav" class="closed">
+		 		<ul id="list">
+					<li class="is-active" onclick="_add(this, '.one');"><a href="#main">Home</a></li>
+					<li onclick="_add(this, '.two');"><a href="#about">About</a></li>
+					<li onclick="_add(this, '.three');"><a href="#project">Projects</a></li>
+					<li onclick="_add(this, '.four');"><a href="#contact">Contact</a></li>
+					<li onclick="_add(this, '.five');"><a href="#social">Social</a></li>
+				</ul>
+		 	</nav>
+		</div>	
+	</header>
+
+	<main id="main">
+		<div class="main-content">
+			<img class="logo" src="images/web.svg">
+			<p class="main-p">Welcome to my</p>
+			<h1 id="text" class="main-h"></h1>
+			<div class="buttons">
+				<button class="btn btn-1">Hire</button>
+				<button class="btn btn2">Hire</button>
+			</div>
+		</div>
+	</main>
+
+	<section id="about" class="two">
+		<div class="section-about"
+			data-sal-duration = "800"
+			data-sal-delay = "300"
+			data-sal = "slide-up"
+			data-sal-easing = "ease-out-bounce"
+		>
+			<h2 class="about-h">Who Am I?</h2><hr>
+			<p class="about-p">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</section>
+
+	<section class="portfolio three" id="project">
+	<h1 class="portfolio-h">Some of my projects</h1>
+
+	<!-- portfolio item 01 -->
+	<figure class="port-item"
+		data-sal-duration = "800"
+		data-sal-delay = "300"
+		data-sal = "slide-up"
+		data-sal-easing = "ease-out-bounce"
+	>
+		<img src="images/project1.jpg" alt="portfolio item">
+		<figcaption class="port-desc">
+			<a href=""><h2>Title 1</h2></a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 02 -->
+	<figure class="port-item"
+		data-sal-duration = "800"
+		data-sal-delay = "300"
+		data-sal = "slide-up"
+		data-sal-easing = "ease-out-bounce"
+	>
+		<img src="images/project2.jpg" alt="portfolio item">
+		<figcaption class="port-desc">
+			<a href=""><h2>Title 2</h2></a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 03 -->
+	<figure class="port-item"
+		data-sal-duration = "800"
+		data-sal-delay = "300"
+		data-sal = "slide-up"
+		data-sal-easing = "ease-out-bounce"
+	>
+		<img src="images/project3.jpg" alt="portfolio item">
+		<figcaption class="port-desc">
+			<a href=""><h2>Title 3</h2></a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 04 -->
+	<figure class="port-item"
+		data-sal-duration = "800"
+		data-sal-delay = "300"
+		data-sal = "slide-up"
+		data-sal-easing = "ease-out-bounce"
+	>
+		<img src="images/projects4.jpg" alt="portfolio item">
+		<figcaption class="port-desc">
+			<a href=""><h2>Title 4</h2></a>
+		</figcaption>
+	</figure>
+</section>
+
+	<section id="contact" class="four">
+		<div class="section-contact"
+			data-sal-duration = "800"
+			data-sal-delay = "300"
+			data-sal = "slide-up"
+			data-sal-easing = "ease-out-bounce"
+		>
+			<h2 class="contact-h">Get in Touch</h2>
+			<form id="contact-form">
+				<label for="names">Name<input type="text" id="names" required></label>
+				<label for="mail">Email<input type="email" id="mail"></label>
+				<label for="msg">Message<textarea></textarea></label>
+				<button id="sub" onclick="_animate();">Send</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="social" class="five">
+		<div class="social-section"
+			data-sal-duration = "800"
+			data-sal-delay = "300"
+			data-sal = "slide-up"
+			data-sal-easing = "ease-out-bounce"
+		>
+			<h2 class="social-h">Follow me on</h2>
+			<div class="handles">
+				<a class="im" href=""><img src="C:\xampp\htdocs\project\img\fb.png" width="50px" height="50px"></a>
+				<a class="im" href=""><img width="50px" height="50px" src="C:\xampp\htdocs\project\img\google.png"></a>
+				<a class="im" href=""><img width="50px" height="50px" src="C:\xampp\htdocs\project\img\insta.png"></a>
+				<a class="im" href=""><img width="50px" height="50px" src="C:\xampp\htdocs\project\img\twitter.png"></a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; All copyRights are reserved by Portfolio site 2019. <a href="">Terms & conditions</a></p>
+	</footer>
+
+
+	<script src="node_modules/sal.js/dist/sal.js"></script>
+
+	<script type="text/javascript">
+		// sal({
+		// 	thresold:1,
+		// 	once:false,
+		// });
+		sal();
+	</script>
+
+
+	<script type="text/javascript">
+		var i = 0;
+		var txt = 'Portfolio';
+		
+
+		function typing(){
+			if(i < txt.length){
+				document.getElementById('text').innerHTML += txt.charAt(i);
+				i++;
+			}
+			setTimeout(typing, 300);
+		} 
+		typing();
+	</script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
